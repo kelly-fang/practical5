@@ -10,7 +10,7 @@ import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
+
 
 import java.util.Calendar;
 
@@ -73,7 +73,7 @@ public class DatePickerFragment extends DialogFragment
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-        MainActivity activity = (MainActivity) getActivity();
+        OrderActivity activity = (OrderActivity) getActivity();
         int day = 0;
         activity.processDatePickerResult(year, month, day);
     }
